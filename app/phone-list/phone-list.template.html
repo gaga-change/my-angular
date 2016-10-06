@@ -19,11 +19,11 @@
 
             <ul class="phone-list">
                 <li class="row"  ng-repeat="phone in $ctrl.phones | filter:$ctrl.query | orderBy :$ctrl.mode+$ctrl.orderProp ">
-                    <a class="col-xs-3" href="#/phones/{{phone.id}}">
+                    <a class="col-xs-3" href="#!/phones/{{phone.id}}">
                         <img class="img-responsive" ng-src="{{phone.imageUrl}}" alt="{{phone.name}}" />
                     </a>
                     <div class="col-xs-9">
-                        <a href="#/phones/{{phone.id}}"><span>{{phone.name}}</span></a>
+                        <a href="#!/phones/{{phone.id}}"><span>{{phone.name}}</span></a>
                         <p>{{phone.snippet}}</p>
                     </div>
                 </li>
