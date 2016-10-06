@@ -17,8 +17,8 @@
         <div class="col-md-10">
             <!-- Body content -->
 
-            <ul class="phone-list">
-                <li class="row"  ng-repeat="phone in $ctrl.phones | filter:$ctrl.query | orderBy :$ctrl.mode+$ctrl.orderProp ">
+            <ul class="phone-list" >
+                <li class="row  phone-list-item"  ng-repeat="phone in $ctrl.phones | filter:$ctrl.query | orderBy :$ctrl.mode+$ctrl.orderProp " >
                     <a class="col-xs-3" href="#!/phones/{{phone.id}}">
                         <img class="img-responsive" ng-src="{{phone.imageUrl}}" alt="{{phone.name}}" />
                     </a>
