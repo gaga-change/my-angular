@@ -3,3 +3,13 @@ body{
     font-family: STKaiti;
     color: #00cc99;
 }
+.phone-list {
+    list-style:none;
+}
+.phone-list div{
+    margin-top: 20px;
+    min-width: 500px;
+}
+.phone-list div a{
+    margin-bottom: 20px;
+}
