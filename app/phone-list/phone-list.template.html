@@ -10,12 +10,15 @@
                 <option value="name">Alphabetical</option>
                 <option value="age">Newest</option>
             </Select>
+            <br>
+            <label ><input id="mode1" type="radio"  value="-" name="mode" ng-model="$ctrl.mode"  >降</label>
+            <label ><input id="mode2" type="radio" value="+"  name="mode" ng-model="$ctrl.mode"   >升</label>
         </div>
         <div class="col-md-10">
             <!-- Body content -->
 
             <ul>
-                <li ng-repeat="phone in $ctrl.phones | filter:$ctrl.query | orderBy :$ctrl.orderProp ">
+                <li ng-repeat="phone in $ctrl.phones | filter:$ctrl.query | orderBy :$ctrl.mode+$ctrl.orderProp ">
                     <span>{{phone.name}}</span>
                     <p>{{phone.snippet}}</p>
                 </li>
