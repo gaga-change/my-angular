@@ -11,14 +11,19 @@
                 <option value="age">Newest</option>
             </Select>
             <hr>
-            <label ><input id="mode1" type="radio"  value="-" name="mode" ng-model="$ctrl.mode"  >降</label>
-            <label ><input id="mode2" type="radio" value="+"  name="mode" ng-model="$ctrl.mode"   >升</label>
+            <label ><input id="mode1" type="radio"  value="-" name="mode" ng-model="$ctrl.mode"  >down</label>
+            <label ><input id="mode2" type="radio" value="+"  name="mode" ng-model="$ctrl.mode"   >up</label>
         </div>
         <div class="col-md-10">
             <!-- Body content -->
 
+<<<<<<< HEAD
             <ul class="phone-list">
                 <li class="row"  ng-repeat="phone in $ctrl.phones | filter:$ctrl.query | orderBy :$ctrl.mode+$ctrl.orderProp ">
+=======
+            <ul class="phone-list" >
+                <li class="row  phone-list-item"  ng-repeat="phone in $ctrl.phones | filter:$ctrl.query | orderBy :$ctrl.mode+$ctrl.orderProp " >
+>>>>>>> 95b8f2abef8802a91a097232d73b8966112041e6
                     <a class="col-xs-3" href="#!/phones/{{phone.id}}">
                         <img class="img-responsive" ng-src="{{phone.imageUrl}}" alt="{{phone.name}}" />
                     </a>
